@@ -1,0 +1,29 @@
+<!-- The table will render the details of the country selected using data binding concept -->
+
+
+
+<div class="container">
+    <table class="table table-hover text-center">
+        <thead>
+            <tr>
+                <td  >Country Flag</td>
+                <td>Name</td>
+                <td>Currency Name</td>
+                <td>Lattitude/ Longitude</td>
+                <td>Land Area</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td > <img class="img-thumbnail-new"  src="{{country.Flag}}" alt="flag"></td>
+                <td>{{country.Name}}</td>
+                <td>{{country.CurrencyName}}</td>
+                <td>{{country.Latitude}}/ {{country.Latitude}} </td>
+                <td>{{country.Area}} </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+

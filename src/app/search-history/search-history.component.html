@@ -1,0 +1,25 @@
+
+<!-- The table will render the details of he country selected using data binding concept -->
+<div class="container">
+    <table class="table table-hover text-center">
+        <thead>
+            <tr>
+                <td><Country Flag</td>
+                <!--<td class="img-thumbnail-new" >Country Flag</td> -->
+                <td>Name</td>
+                <td>Currency</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let country of history" (click)="openCountry(country.NumericCode)">
+              <!--  <td class="img-thumbnail-new"> <img class="img-thumbnail-new" style="height:15% !important;" src="{{country.Flag}}" alt="flag"></td> -->
+              <td class="img-thumbnail-new"> <img class="img-thumbnail-new" src="{{country.Flag}}" alt="flag"></td>
+                <td>{{country.Name}}</td>
+                <td>{{country.Name}}</td>
+            </tr>
+        </tbody>
+    </table> 
+</div>
+
+
+<router-outlet></router-outlet>

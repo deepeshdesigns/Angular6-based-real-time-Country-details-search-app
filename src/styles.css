@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+
+/* Increased the size of nav bar menu fonts */
+
+.nav-link, .navbar-light .navbar-nav >.nav-link {
+    font-size:120%;
+}
+
+
+/* Increasing the overall width of body to get complete responsive experience in mobile */
+body {
+    width:100% !important;
+}
+
+/* Increasing the margins of the branding element in nav bar */
+.navbar-brand {
+    margin-left: 1%;
+    margin-right: 3%;
+}
+
+
+/* Increasing the margins of the menu items for clear spacing  */
+.nav-item {
+    margin-left:5%;
+    margin-right:5%
+}

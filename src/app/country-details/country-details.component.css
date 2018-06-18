@@ -1,0 +1,59 @@
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+
+
+/* Fixing the size of the images in the tables display */
+.img-thumbnail-new {
+  height:100px !important;
+  width:150px !important;
+}
+
+
+.table td, .table th {
+  padding: .75rem;
+  vertical-align: middle;
+  border-top: 1px solid #dee2e6;
+}
+
+table > thead >tr >td {
+  font-weight:bold !important;
+  }
+
+/* Media query to align the search box for small mobile phones */
+
+@media only screen and (min-width: 320px) and (max-width: 479px){ 
+
+  .img-thumbnail-new {
+    height: 87px !important;
+    width: 92px !important;
+  }
+
+ table {
+    font-size:0.6rem !important;
+  }
+  }
+
+  
+/* Media query to align the search box for large mobile phones */
+
+@media only screen and (min-width: 480px) and (max-width: 767px){ 
+ 
+  .img-thumbnail-new {
+    height: 87px !important;
+    width: 92px !important;
+
+ }
+
+ 
+ table {
+  font-size:0.6rem !important;
+}
+
+}

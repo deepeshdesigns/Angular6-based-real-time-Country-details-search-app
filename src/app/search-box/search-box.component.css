@@ -1,0 +1,115 @@
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+.grid-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+/* Reduce the size of font of hint element */
+
+.mat-hint{
+  font-size:59% !important;
+}
+
+/* Media query to align the search box for small mobile phones */
+
+@media only screen and (min-width: 320px) and (max-width: 479px){ 
+  .center-search {
+    margin-top:50%;
+    max-width:90%;
+    margin-left:05%;
+        }
+
+      
+
+      .mat-form-field {
+        font-size: 20px  !important;
+        font-weight: 400;
+        line-height: 1.125;
+        font-family: Roboto,"Helvetica Neue",sans-serif;
+        width: 290px !important;
+    }
+
+
+  }
+
+  
+/* Media query to align the search box for large mobile phones */
+
+@media only screen and (min-width: 480px) and (max-width: 767px){ 
+  .center-search {
+    margin-top:50%;
+    max-width:90%;
+    margin-left:6%;
+        }
+
+    
+      .mat-form-field {
+        font-size: 20px  !important;
+        font-weight: 400;
+        line-height: 1.125;
+        font-family: Roboto,"Helvetica Neue",sans-serif;
+        width: 290px !important;
+    }
+ }
+
+ 
+/* Media query to align the search box for desktops and laptops */
+@media only screen and (min-width: 768px) and (max-width: 991px){ 
+  .center-search {
+    margin-top:20%;
+    margin-left:7%;
+    max-width:90%;
+        }
+
+        .mat-form-field-infix {
+          display: block;
+          position: relative;
+          flex: auto;
+          min-width: 0;
+          width: 290px !important;
+      }
+
+      .mat-form-field {
+        font-size: 20px !important;
+        font-weight: 400;
+        line-height: 1.125;
+        font-family: Roboto,"Helvetica Neue",sans-serif;
+    }
+
+ }
+
+ @media only screen and (min-width: 992px) and (max-width: 1380px){ 
+
+  .center-search {
+    margin-top:20%;
+    margin-left:7%;
+    max-width:90%;
+        }
+ }
+ 
+/* Media query to align the search box for large screens */
+
+@media only screen and (min-width: 1382px) and (max-width: 1999px){ 
+
+  .center-search {
+    margin-top:20%;
+    margin-left:7%;
+    max-width:90%;
+        }
+ }

@@ -1,0 +1,30 @@
+<!-- The searchbox will auto populated the countries information using angular.material.io library   -->
+
+<!-- The table will render the details of he countries selected using data binding concept -->
+<!-- On clicking any of the rows in the table,it would lead to search page and display the country information   -->
+
+
+       <div class="grid-container">
+            <div class="grid-item center-search"> 
+              <form class="example-form " >
+                <mat-form-field class="example-full-width">
+                  <input type="text" placeholder="Select a Country" aria-label="Number" matInput [matAutocomplete]="auto"
+                  name="joke" #joke="ngModel"
+                  [(ngModel)]="keyword" (ngModelChange)="onKeywordChange()">
+                  <mat-hint>*Please enter atleast 3 characters to search the country name</mat-hint>
+                  <!-- <input type="text" placeholder="Pick one" aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto"> -->
+                  <mat-autocomplete #auto="matAutocomplete">
+                    <mat-option *ngFor="let option of options" (onSelectionChange)="onCountrySelect(option)" [value]="option.Name">
+                      {{ option.Name }}
+                    </mat-option>
+                  </mat-autocomplete>
+                </mat-form-field>
+
+                    </form>
+            </div>
+          
+          </div> 
+          <router-outlet ></router-outlet>
+    
+
+
