@@ -9,6 +9,9 @@ const  routes: Routes = [
     path : '', component: SearchBoxComponent,
   },
   {
+    path : 'search', component: SearchBoxComponent,
+  },
+  {
     path : 'history', component: SearchHistoryComponent,
   },
   {
@@ -21,7 +24,7 @@ const  routes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot(routes,{useHash: true}),
     CommonModule,
     RouterModule,
   ],

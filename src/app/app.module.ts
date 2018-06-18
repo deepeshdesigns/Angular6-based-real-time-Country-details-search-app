@@ -30,7 +30,9 @@ import { StorageService } from './storage.service';
     FormsModule,
     ReactiveFormsModule,
     MaterialAppModule,
-    AppRoutingModule,RouterModule.forRoot([
+    AppRoutingModule,
+    /*
+    RouterModule.forRoot([
 
       
       //{path: '', component: AppComponent },
@@ -42,7 +44,7 @@ import { StorageService } from './storage.service';
       { path: '', redirectTo: 'search', pathMatch: 'full'},
            { path: '**', redirectTo: 'search', pathMatch: 'full' }
       
-    ])
+    ],{useHash: true}) */
   ],
   providers: [CountriesService, ApiService, StorageService],
   bootstrap: [AppComponent]

@@ -1,0 +1,13 @@
+
+/* Increasing the margins of the branding element in nav bar */
+.navbar-brand {
+    margin-left: 1%;
+    margin-right: 3%;
+}
+
+
+/* Increasing the margins of the menu items for clear spacing  */
+.nav-item {
+    margin-left:5%;
+    margin-right:5%
+}
