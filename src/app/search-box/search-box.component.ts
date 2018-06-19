@@ -28,6 +28,8 @@ export class SearchBoxComponent implements OnInit {
     this.router.navigate([historyRoute]);
   }
 
+  /* Thismethod is used to ensure that the filtering list should only appear when min. 3 characters are typed */
+
   search(keyword) {
     // console.log(keyword);
     if (keyword.length < 3) {
@@ -38,6 +40,8 @@ export class SearchBoxComponent implements OnInit {
       // console.log(data);
     });
   }
+
+  /* This method is used to call the method to render the details of the country which is recently selected from the drop down list in Search box*/
   onCountrySelect(country) {
     const numericCode = country.NumericCode;
     this.country.get(numericCode).subscribe((filteredCountry: any) => {
@@ -47,6 +51,7 @@ export class SearchBoxComponent implements OnInit {
     });
   }
 
+  /* On initialisation of this component, reverse the order of History object (array of country details) so that when rendered, it gives recent searches on the top */
   ngOnInit() {
     const history = this.country.getHistory();
     this.options = history.slice(0, history.length).reverse().slice(0, 5);
