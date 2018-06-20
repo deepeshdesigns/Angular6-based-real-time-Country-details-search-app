@@ -1,6 +1,40 @@
-# CountryInformation
+# Realtime Country Details App
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
+
+## How to use
+One can utilize this app to find the country details and generate (& store) the history of the latest searches in the browser storage
+
+## API used
+http://countryapi.gear.host/v1/Country/getCountries
+
+This API provides real time data about a country. Following Information is available for a country 
+- a. Country flag
+- b. Currency
+-c. Capital
+-d Area
+-e. Latitude and Longitude
+
+and several other geographical details
+
+
+## Live app
+
+Live app can be accessed at 
+
+`https://deepeshdesigns.github.io/flare/`
+
+
+## FrontEnd Snapshots
+
+![Screenshot](Desktopview1.png)
+
+![Screenshot](Desktopview2.png)
+
+![Screenshot](Desktopview3.png)
+
+![Screenshot](Desktopview4.png)
+
 
 ## Development server
 
